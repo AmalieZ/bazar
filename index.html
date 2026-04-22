@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bazar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>BAZAR</h1>
+</header>
+
+<main>
+    <section class="form-section">
+        <h2>Přidat inzerát</h2>
+
+        <form id="adForm">
+            <input type="text" name="title" placeholder="Název" required minlength="5">
+
+            <select name="category" required>
+                <option value="">Vyber kategorii</option>
+                <option>Matematika</option>
+                <option>Český jazyk</option>
+                <option>Anglický jazyk</option>
+                <option>Fyzika</option>
+                <option>Chemie</option>
+                <option>Biologie</option>
+                <option>Dějepis</option>
+                <option>Jiné</option>
+            </select>
+
+            <p>Stav:</p>
+            <div class="inline-group">
+                <label class="inline-option">
+                    <input type="radio" name="condition" value="Nová" required>
+                    <span>Nová</span>
+                </label>
+
+                <label class="inline-option">
+                    <input type="radio" name="condition" value="Použitá">
+                    <span>Použitá</span>
+                </label>
+            </div>
+
+            <label class="inline-option checkbox">
+                <input type="checkbox" name="terms" required>
+                <span>Souhlasím s podmínkami</span>
+            </label>
+
+                <input type="number" name="price" placeholder="Cena" required min="1">
+                <input type="url" name="image" placeholder="Url obrázkku">
+                <textarea name="description" placeholder="Popis" required></textarea>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">Přidat inzerát</button>
+        </form>
+    </section>
+
+    <section>
+        <h2 class="seznam">Seznam inzerátů</h2>
+        <div id="ads" class="ads-grid"></div>
+    </section>
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>

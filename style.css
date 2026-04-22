@@ -1,0 +1,95 @@
+body {
+    font-family: sans-serif, Arial;
+    margin: 0;
+    background: #0E7C7B;
+    color: black;
+}
+
+header {
+    background: #0E7C7B;
+    color: #ecf3ed;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.form-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+}
+
+button {
+    background: #0E7C7B;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.price {
+    color: #0E7C7B;
+    font-weight: bold;
+}
+
+.inline-group {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.inline-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.inline-option input {
+    width: auto;
+
+}
+
+.checkbox {
+    margin-top: 10px;
+}
+
+h2.seznam {
+    color: #ecf3ed;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
