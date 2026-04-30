@@ -85,7 +85,7 @@
     if (source.length === 0) {
     container.innerHTML = `
         <div class="empty-state">
-          <p>Zatím žádné knihy. Buď první!</p>
+          <p>Zatím žádné knihy</p>
         </div>`;
     return;
 }
